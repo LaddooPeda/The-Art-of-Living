@@ -5,32 +5,32 @@ app = Flask(__name__)
 JOBS = [
   {
     'id': 1,
-    'title': 'Data Analyst',
+    'title': 'Happiness Program',
     'location': 'Bengaluru, India',
-    'salary': 'Rs. 10,00,000'
+    'salary': 'Rs. 2500'
   },
   {
     'id': 2,
-    'title': 'Data Scientist',
+    'title': 'Sri Sri Yoga',
     'location': 'Delhi, India',
-    'salary': 'Rs. 15,00,000'
+    'salary': 'Rs. 2500'
   },
   {
     'id': 3,
-    'title': 'Frontend Engineer',
+    'title': 'Utkarsh Yoga',
     'location': 'Remote',
   },
   {
     'id': 4,
-    'title': 'Backend Engineer',
+    'title': 'Advanced Meditation Program',
     'location': 'San Francisco, USA',
-    'salary': '$120,000'
+    'salary': '$200'
   }
 ]
 
 @app.route("/")
 def hello_world():
-    return render_template('home.html', jobs=JOBS, company_name='Jovian')
+    return render_template('home.html', jobs=JOBS, company_name='The Art of Living')
 
 @app.route("/jobs")
 def list_jobs():
